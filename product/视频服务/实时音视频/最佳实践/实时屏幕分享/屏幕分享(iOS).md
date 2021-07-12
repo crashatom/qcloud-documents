@@ -109,7 +109,6 @@ iOS 系统上的跨应用屏幕分享，需要增加 Extension 录屏进程以�
 
 @implementation SampleHandler
 // 注意：此处的 APPGROUP 需要改成上文中的创建的 App Group Identifier。
-
 - (void)broadcastStartedWithSetupInfo:(NSDictionary<NSString *,NSObject *> *)setupInfo {
     [[TXReplayKitExt sharedInstance] setupWithAppGroup:APPGROUP delegate:self];
 }
@@ -183,7 +182,6 @@ iOS 系统上的跨应用屏幕分享，需要增加 Extension 录屏进程以�
 <dx-codeblock>
 ::: iOS object-c
 // 开始屏幕分享，需要将 APPGROUP 替换为上述步骤中创建的 App Group Identifier。
-
 - (void)startScreenCapture {
     TRTCVideoEncParam *videoEncConfig = [[TRTCVideoEncParam alloc] init];
     videoEncConfig.videoResolution = TRTCVideoResolution_1280_720;
